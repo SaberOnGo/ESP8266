@@ -1,0 +1,52 @@
+---- WILDDOG_DEBUG Matches (51 in 14 files) ----
+Option.c (wilddog-client-c\src\networking\coap):#include "wilddog_debug.h"
+Pdu.c (wilddog-client-c\src\networking\coap):#include "wilddog_debug.h"
+Performtest.c (wilddog-client-c\src):    wilddog_debug();
+Performtest.c (wilddog-client-c\src):    wilddog_debug();
+Performtest.c (wilddog-client-c\src):    wilddog_debug();
+Test_buildtree.c (app\user):        wilddog_debug("observe failed!, err = %d", err);        
+Test_buildtree.c (app\user):    wilddog_debug("observe data!"); 
+Test_buildtree.c (app\user):            wilddog_debug("led off");
+Test_buildtree.c (app\user):            wilddog_debug("led on");
+Test_buildtree.c (app\user):        wilddog_debug("setValue error! error:%d\n", err);
+Test_buildtree.c (app\user):    wilddog_debug("setValue success!");
+Test_buildtree.c (app\user):        wilddog_debug("new wilddog error");
+WDJson_Drv.c (app\user):        wilddog_debug("observe failed!\n");
+WDJson_Drv.c (app\user):	wilddog_debug("observe data!\n");
+WDJson_Drv.c (app\user):        wilddog_debug("setValue error!, sys time: %ld ms, msgId = %ld\n", system_get_time() / 1000, msgId);
+WDJson_Drv.c (app\user):    wilddog_debug("setValue success! sys time: %ld ms, msgId = %ld\n", system_get_time() / 1000, msgId);
+WDJson_Drv.c (app\user):		wilddog_debug("error: WDJson_OnObserverSync() arg is null\n");
+WDJson_Drv.c (app\user):        wilddog_debug("observer sync success\n");
+WDJson_Drv.c (app\user):	   wilddog_debug("observer sync failed\n");
+WDJson_Drv.c (app\user):       wilddog_debug("arg is null, return\n");
+WDJson_Drv.c (app\user):		   wilddog_debug("free mem addr = 0x%d, msgId = %ld\n", (long)nodeSync, nodeSync->msgId);
+WDJson_Drv.c (app\user):      wilddog_debug("get child id failed\n");
+WDJson_Drv.c (app\user):      wilddog_debug("get child node failed\n");
+WDJson_Drv.c (app\user):      wilddog_debug("get child id failed\n");
+WDJson_Drv.c (app\user):      wilddog_debug("get child node failed\n");
+WDJson_Drv.c (app\user):      wilddog_debug("malloc failed\n");
+WDJson_Drv.c (app\user):        wilddog_debug("push failed, error code is %d", err);
+WDJson_Drv.c (app\user):    wilddog_debug("new path is %s", p_path);
+WDJson_Drv.c (app\user):      wilddog_debug("get child id failed, file = %s, line = %d\n", __FILE__, __LINE__);
+WDJson_Drv.c (app\user):      wilddog_debug("get child node failed\n");
+Wilddog.h (wilddog-client-c\include)://#define WILDDOG_DEBUG
+Wilddog.h (wilddog-client-c\include):#ifdef WILDDOG_DEBUG
+Wilddog.h (wilddog-client-c\include):#define wilddog_debug(format,...) wilddog_debug_level(WD_DEBUG_NODBG, \
+Wilddog.h (wilddog-client-c\include):#define wilddog_debug(format,...) do{printf(format"\r\n", ##__VA_ARGS__);}while(0)
+Wilddog.h (wilddog-client-c\include)://#define wilddog_debug(...)
+Wilddog.h (wilddog-client-c\include):#include "wilddog_debug.h"
+Wilddog_conn.c (wilddog-client-c\src):#include "wilddog_debug.h"
+Wilddog_conn_coap.c (wilddog-client-c\src\networking\coap):#include "wilddog_debug.h"
+Wilddog_conn_coap.c (wilddog-client-c\src\networking\coap):#ifdef WILDDOG_DEBUG
+Wilddog_conn_manage.c (wilddog-client-c\src):#include "wilddog_debug.h"
+Wilddog_conn_manage.c (wilddog-client-c\src):            wilddog_debug("\t re_connect session\n");
+Wilddog_conn_manage.c (wilddog-client-c\src):    wilddog_debug("\t<><>\ttry long ping time : %d",p_cmsys_n->d_long_pingCont);
+Wilddog_conn_manage.c (wilddog-client-c\src):    wilddog_debug("\t<><>\tinterval time :%d ",p_cmsys_n->d_intervalTm);
+Wilddog_conn_manage.c (wilddog-client-c\src):    wilddog_debug("\t<><>\tstep time :%d ",p_cmsys_n->d_stepTm);
+Wilddog_debug.c (wilddog-client-c\src): * FileName: wilddog_debug.c
+Wilddog_debug.c (wilddog-client-c\src):#include "wilddog_debug.h"
+WildDog_Drv.c (app\user):        wilddog_debug("setValue error!");
+WildDog_Drv.c (app\user):    wilddog_debug("setValue success!");
+Wilddog_dtls.c (wilddog-client-c\src\secure\mbedtls\lib):#include "wilddog_debug.h"
+Wilddog_node.c (wilddog-client-c\src):#include "wilddog_debug.h"
+Wilddog_sec_host.c (wilddog-client-c\src):#include "wilddog_debug.h"
